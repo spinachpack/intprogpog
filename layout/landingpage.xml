@@ -6,41 +6,39 @@
     android:layout_height="match_parent"
     android:background="#AAB99A"
     android:orientation="vertical"
-    android:paddingLeft="24dp"
-    android:paddingRight="24dp">
+    android:padding="24dp">
 
 
     <!-- Header section -->
-    <TextView
-        android:id="@+id/appname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:text="CHARGELOCK"
-        android:textColor="#2C3930"
-        android:textSize="28sp"
-        android:textStyle="bold" />
+<!--    <TextView-->
+<!--        android:id="@+id/appname"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="PowerPause"-->
+<!--        android:textColor="#2C3930"-->
+<!--        android:textSize="28sp"-->
+<!--        android:textStyle="bold" />-->
 
-    <View
-        android:id="@+id/hrbar"
-        android:layout_width="80dp"
-        android:layout_height="3dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="25dp"
-        android:background="#2C3930" />
+<!--    <View-->
+<!--        android:id="@+id/hrbar"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="3dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:background="#2C3930" />-->
 
     <!-- App Logo -->
     <ImageView
         android:id="@+id/applogo"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/chargelock_logo"
-        android:background="@drawable/circleimage"
-        android:clipToOutline="true"/>
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/powerpauselogo"
+        />
 
     <!-- App Description Box -->
     <LinearLayout
@@ -65,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="ChargeLock helps you maintain battery health and reduce screen time by restricting app usage while your device is charging."
+            android:text="PowerPause helps you maintain battery health and reduce screen time by restricting app usage while your device is charging."
             android:textColor="#000000"
             android:textSize="14sp"
             android:gravity="center" />
@@ -180,9 +178,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:padding="8dp"
-        android:text="About ChargeLock"
+        android:text="About PowerPause"
         android:textColor="#2C3930"
         android:textSize="16sp"
         android:textStyle="bold" />
