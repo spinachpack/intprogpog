@@ -69,7 +69,8 @@
                     android:text="kur0_m1@gmail.com"
                     android:textColor="#2C3930"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -117,7 +118,7 @@
         android:layout_marginTop="15dp"
         android:background="#802C3930"
         android:text="CANCEL"
-        android:textColor="#2C3930"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -126,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:padding="8dp"
         android:text="Account Settings"
         android:textColor="#2C3930"
