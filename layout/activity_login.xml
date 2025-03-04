@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#AAB99A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/login_backbutton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Back"
+                    android:padding="12dp"
+                    android:src="@drawable/backbutton"
+                    android:scaleType="centerCrop"
+                    android:scaleY="1.5"
+                    android:scaleX="1.5"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#A9B899"
+                android:src="@drawable/powerpauselogo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:hint="Login"
+                android:textStyle="bold"
+                android:textColorHint="#2C3930"
+                android:textSize="30sp"> </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Username:"
+                android:fontFamily="sans-serif-medium"
+                android:textColorHint="#2C3930"
+                android:textSize="23sp"> </TextView>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Email or username"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="2dp"
+                android:paddingLeft="12dp"
+                android:elevation="5dp"
+                android:height="40sp"> </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password:"
+                android:fontFamily="sans-serif-medium"
+                android:textColorHint="#2C3930"
+                android:textSize="23sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"> </TextView>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                android:layout_marginHorizontal="20dp"
+                android:paddingLeft="12dp"
+                android:height="40sp"
+                android:elevation="5dp"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext"> </EditText>
+
+            <TextView
+                android:id="@+id/forgotp_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:hint="Forgot password?"
+                android:fontFamily="sans-serif-medium"
+                android:textColorHint="#2C3930"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"> </TextView>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="#2C3930"
+                android:hint="LOGIN"
+                android:elevation="15dp"
+                android:textColorHint="@color/white"> </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Don't have an account?"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColorHint="#2C3930"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"> </TextView>
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="#2C3930"
+                    android:hint="REGISTER HERE!"
+                    android:textColorHint="@color/white"
+                    android:layout_gravity="center"
+                    android:elevation="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"> </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
