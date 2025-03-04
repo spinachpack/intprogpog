@@ -21,11 +21,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="280dp"
+                android:layout_marginTop="260dp"
                 android:hint="Welcome!"
                 android:fontFamily="sans-serif-black"
                 android:textColorHint="#FFFFFF"
-                android:textSize="45dp"> </TextView>
+                android:textSize="45dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
                 android:hint="Give your phone and yourself a break! Stay focused and recharge while your device powers up. \n\nNo distractions, just smarter charging."
                 android:fontFamily="sans-serif-medium"
                 android:textColorHint="#FFFFFF"
-                android:textSize="17dp"> </TextView>
+                android:textSize="17dp"/>
 
             <Button
                 android:id="@+id/getStartedButton"
@@ -45,13 +45,13 @@
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="50dp"
                 android:layout_marginTop="110dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="30dp"
                 android:background="#2C3930"
                 android:hint="GET STARTED"
                 android:textStyle="bold"
                 android:elevation="15dp"
                 android:textSize="15dp"
-                android:textColorHint="@color/white"> </Button>
+                android:textColorHint="@color/white"/>
         </LinearLayout>
     </ScrollView>
 
