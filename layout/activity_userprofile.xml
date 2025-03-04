@@ -13,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="16dp"
-        android:paddingTop="10dp">
+        android:paddingTop="16dp"
+        android:background="#2C3930"
+        android:elevation="4dp">
 
         <ImageButton
             android:id="@+id/devback_button"
@@ -23,9 +25,8 @@
             android:contentDescription="Back"
             android:padding="12dp"
             android:src="@drawable/backbutton"
-            android:scaleType="centerCrop"
-            android:scaleY="1.5"
-            android:scaleX="1.5"/>
+            android:scaleType="centerInside"
+            app:tint="@android:color/white"/>
 
         <TextView
             android:layout_width="0dp"
@@ -34,8 +35,8 @@
             android:gravity="center"
             android:text="Profile"
             android:textStyle="bold"
-            android:textColor="#2C3930"
-            android:textSize="30sp"/>
+            android:textColor="@android:color/white"
+            android:textSize="24sp"/>
 
         <View
             android:layout_width="48dp"
@@ -43,105 +44,107 @@
 
     </LinearLayout>
 
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp">
+
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="138dp"
-                android:layout_gravity="center"
-                android:elevation="15dp"
-                android:layout_marginTop="10dp">
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/coverpic" />
+                    android:src="@drawable/summercover"
+                    android:scaleType="centerCrop"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:layout_gravity="left"
-                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="-65dp"
-                android:elevation="15dp"
-                app:cardCornerRadius="200dp">
+                app:cardCornerRadius="65dp"
+                app:cardElevation="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/profile"/>
+                    android:src="@drawable/profile"
+                    android:scaleType="centerCrop"/>
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:hint="˚₊‧꒰ა ☆ ໒꒱ ‧₊˚~."
-                android:textColor="#000000"
-                android:textSize="20sp"/>
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:hint="__________________________________"
-                android:textColorHint="#669E9E9E"
-                android:textSize="23sp"/>
+                android:orientation="vertical"
+                android:paddingHorizontal="32dp"
+                android:layout_marginTop="16dp">
 
-            <TextView
-                android:id="@+id/prof_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="20dp"
-                android:hint="Name: Loading..."
-                android:textColor="#2C3930"
-                android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="˚₊‧꒰ა ☆ ໒꒱ ‧₊˚~."
+                    android:textColor="#666666"
+                    android:textSize="18sp"/>
 
-            <TextView
-                android:id="@+id/prof_user"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:hint="Username: Loading..."
-                android:textColor="#2C3930"
-                android:textSize="20sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="16dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="10dp"
-                android:hint="Contact Number: +63 960 572 4936"
-                android:textColor="#2C3930"
-                android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/prof_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name: Aliah Monilar"
+                    android:textColor="#2C3930"
+                    android:textSize="20sp"
+                    android:drawablePadding="16dp"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/prof_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email: aliahmonilar@gmail.com"
+                    android:textColor="#2C3930"
+                    android:textSize="20sp"
+                    android:drawablePadding="16dp"
+                    android:padding="8dp"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
 
             <Button
                 android:id="@+id/updateprofile_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="20dp"
-                android:background="#2C3930"
-                android:hint="UPDATE PROFILE"
-                android:textColorHint="@color/white"
-                android:elevation="15dp"
-                android:layout_gravity="center|bottom"
-                android:layout_marginBottom="25dp"
-                > </Button>
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/forgotpframework"
+                android:backgroundTint="#2C3930"
+                android:text="UPDATE PROFILE"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:elevation="8dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="18sp"/>
         </LinearLayout>
-
     </ScrollView>
-
-
 </LinearLayout>

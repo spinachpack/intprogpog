@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:hint="Username:"
+                android:hint="Email:"
                 android:fontFamily="sans-serif-medium"
                 android:textColorHint="#2C3930"
                 android:textSize="23sp"> </TextView>
@@ -76,10 +76,11 @@
             <EditText
                 android:id="@+id/et_username"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:background="@drawable/edittext"
-                android:hint="Email or username"
-                android:textSize="20sp"
+                android:hint="  Email"
+                android:inputType="textEmailAddress"
+                android:textSize="22sp"
                 android:textStyle="italic"
                 android:layout_marginHorizontal="20dp"
                 android:paddingHorizontal="2dp"
@@ -100,7 +101,7 @@
             <EditText
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:hint="Password"
                 android:textSize="22sp"
                 android:textStyle="italic"
